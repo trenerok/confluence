@@ -14,7 +14,9 @@ ARG LANG_COUNTRY=US
 # Setup useful environment variables
 ENV CONF_HOME=/var/atlassian/confluence \
     CONF_INSTALL=/opt/atlassian/confluence \
+    PGGSSENCMODE=disable \
     MYSQL_DRIVER_VERSION=5.1.47
+    
 
 # Install Atlassian Confluence
 RUN export CONTAINER_USER=confluence                        && \
