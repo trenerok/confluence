@@ -29,6 +29,7 @@ services:
       - postgresqldata:/var/lib/postgresql/data
     environment:
       - 'POSTGRES_USER=confluencedb'
+      - 'PGGSSENCMODE=disable'
       # CHANGE THE PASSWORD!
       - 'POSTGRES_PASSWORD=jellyfish'
       - 'POSTGRES_DB=confluencedb'
